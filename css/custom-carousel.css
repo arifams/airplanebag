@@ -28,7 +28,12 @@
 
 #searchForm {
 	position:absolute;
-  	top:5%;
+  	top:25%;
+}
+
+#flightInfo {
+  position:absolute;
+    top:-7%;
 }
 
 /*TEXT AREA*/
