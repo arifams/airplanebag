@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Smart luggage to Airport</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="smart luggage!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+    
+
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="0">
+
+  <!-- header -->
+  <header id="header" role="banner">
+        <div class="">
+            <div id="navbar" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li> -->
+                        <!-- <li><a href="#services">Track My Luggage</a></li>
+                        <li><a href="#portfolio">Airport Depot</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- form -->
+    <div class="container">
+	  <div class="box">
+        <div class="row">
+          <!-- test -->
+          <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 text-center">
+			<h3>
+			</h3>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						① Pickup & Delivery Information
+					</h3>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 text-center">
+			<h3>
+			</h3>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						② Payment and confirmation
+					</h3>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 text-center">
+			<h3>
+			</h3>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Pickup address
+					</h3>
+				</div>
+				<div class="panel-body">
+					<form class="form-horizontal" role="form">
+
+			<div class="form-group">
+                <label for="pickupDate" class="col-md-2 control-label">Pickup date</label>
+                <div class=" col-sm-10">
+	                <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="pickupDate" data-link-format="yyyy-mm-dd">
+	                	<span class="input-group-addon">
+									<i class="glyphicon glyphicon-calendar"></i>
+								</span>
+								<span class="input-group-addon">
+									<i class="glyphicon glyphicon-remove"></i>
+			                    </span>
+
+	                    <input class="form-control" name="pickupDate" size="16" type="text" value=""  required />
+	                </div>
+                </div>
+            </div>
+
+			<div class="form-group">
+                <label for="pickupTime" class="col-md-2 control-label">Pickup time</label>
+                <div class=" col-sm-10">
+	                <div class="input-group date form_time" data-date="" data-date-format="hh:ii" data-link-field="pickupTime" data-link-format="hh:ii">
+	                	<span class="input-group-addon">
+									<i class="glyphicon glyphicon-time"></i>
+								</span>
+								<span class="input-group-addon">
+									<i class="glyphicon glyphicon-remove"></i>
+			                    </span>
+
+	                    <input class="form-control" name="pickupTime" size="16" type="text" value=""  required />
+	                </div>
+                </div>
+            </div>
+
+
+				<div class="form-group">		 
+					<label for="inputMobile" class="col-sm-2 control-label">
+						Mobile Number
+					</label>
+					<div class="col-sm-10">
+						<input type="number" name="mobile" class="form-control" id="inputMobile" onkeypress="return isNumberKey(event)" required>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-2 control-label">
+						Email
+					</label>
+					<div class="col-sm-10">
+						<input type="email" name="email" class="form-control" id="inputEmail" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+					</div>
+				</div>
+
+				<div class="form-group">	 
+					<label for="inputAddress" class="col-sm-2 control-label">
+						Adress
+					</label>
+					<div class="col-sm-10">
+						<input type="text" name="inputAddress" class="form-control" id="inputAddress" required>
+					</div>
+				</div>
+
+				<div class="form-group">	 
+					<label for="inputAdditionalAddress" class="col-sm-2 control-label">
+						Additional address information
+					</label>
+					<div class="col-sm-10">
+						<input type="text" name="additionalAddress" class="form-control" id="inputAddress">
+					</div>
+				</div>
+
+				<div class="form-group">	 
+					<label for="inputZipcode" class="col-sm-2 control-label">
+						Postal / Zip code
+					</label>
+					<div class="col-sm-10">
+						      <input type="text" name="postcode" placeholder="1234XX" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required /> <span class="text-muted">Format: 1234XX</span>
+					</div>
+				</div>
+
+				<div class="form-group">	 
+					<label for="selectCity" class="col-sm-2 control-label">
+						City
+					</label>
+					<div class="col-sm-10">
+						<select name="selectCity1" required="required">
+							<option>Assen</option>
+                                    <option>Coevorden</option>
+                                    <option>Emmen</option>
+                                    <option>Hoogeveen</option>
+                                    <option>Meppel</option>
+                                    <option>Almere</option>
+                                    <option>Lelystad</option>
+                                    <option>Emmeloord</option>
+                                    <option>Biddinghuizen</option>
+                                    <option>Bolsward</option>
+                                    <option>Dokkum</option>
+                                    <option>Drachten</option>
+                                    <option>Franeker</option>
+                                    <option>Harlingen</option>
+                                    <option>Heerenveen</option>
+                                    <option>Hindeloopen</option>
+                                    <option>IJlst</option>
+                                    <option>Leeuwarden</option>
+                                    <option>Sloten</option>
+                                    <option>Sneek</option>
+                                    <option>Stavoren</option>
+                                    <option>Workum</option>
+                                    <option>Apeldoorn</option>
+                                    <option>Arnhem</option>
+                                    <option>Bredevoort</option>
+                                    <option>Buren</option>
+                                    <option>Culemborg</option>
+                                    <option>Deil</option>
+                                    <option>Dieren</option>
+                                    <option>Doetinchem</option>
+                                    <option>Ede</option>
+                                    <option>Enspijk</option>
+                                    <option>Gendt</option>
+                                    <option>Groenlo</option>
+                                    <option>Harderwijk</option>
+                                    <option>Hattem</option>
+                                    <option>Heukelum</option>
+                                    <option>Huissen</option>
+                                    <option>Nijkerk</option>
+                                    <option>Nijmegen</option>
+                                    <option>Tiel</option>
+                                    <option>Wageningen</option>
+                                    <option>Wijchen</option>
+                                    <option>Winterswijk</option>
+                                    <option>Zaltbommel</option>
+                                    <option>Zevenaar</option>
+                                    <option>Zutphen</option>
+                                    <option>Appingedam</option>
+                                    <option>Delfzijl</option>
+                                    <option>Groningen</option>
+                                    <option>Hoogezand-Sappemeer</option>
+                                    <option>Stadskanaal</option>
+                                    <option>Winschoten</option>
+                                    <option>Veendam</option>
+                                    <option>Geleen</option>
+                                    <option>Gennep</option>
+                                    <option>Heerlen</option>
+                                    <option>Kerkrade</option>
+                                    <option>Kessel</option>
+                                    <option>Landgraaf</option>
+                                    <option>Maastricht</option>
+                                    <option>Montfort</option>
+                                    <option>Nieuwstadt</option>
+                                    <option>Roermond</option>
+                                    <option>Sittard</option>
+                                    <option>Schin op Geul</option>
+                                    <option>Stein</option>
+                                    <option>Thorn</option>
+                                    <option>Valkenburg</option>
+                                    <option>Venlo</option>
+                                    <option>Weert</option>
+                                    <option>Bergen op Zoom</option>
+                                    <option>Breda</option>
+                                    <option>'s-Hertogenbosch</option>
+                                    <option>Eindhoven</option>
+                                    <option>Geertruidenberg</option>
+                                    <option>Grave</option>
+                                    <option>Helmond</option>
+                                    <option>Heusden</option>
+                                    <option>Klundert</option>
+                                    <option>Oosterhout</option>
+                                    <option>Oss</option>
+                                    <option>Ravenstein</option>
+                                    <option>Roosendaal</option>
+                                    <option>Sint-Oedenrode</option>
+                                    <option>Tilburg</option>
+                                    <option>Valkenswaard</option>
+                                    <option>Veldhoven</option>
+                                    <option>Waalwijk</option>
+                                    <option>Willemstad</option>
+                                    <option>Woudrichem</option>
+                                    <option>Alkmaar</option>
+                                    <option>Amstelveen</option>
+                                    <option>Amsterdam</option>
+                                    <option>Den Helder</option>
+                                    <option>Edam, Volendam</option>
+                                    <option>Enkhuizen</option>
+                                    <option>Haarlem</option>
+                                    <option>Heerhugowaard</option>
+                                    <option>Hilversum</option>
+                                    <option>Hoofddorp</option>
+                                    <option>Hoorn</option>
+                                    <option>Laren</option>
+                                    <option>Purmerend</option>
+                                    <option>Medemblik</option>
+                                    <option>Monnickendam</option>
+                                    <option>Muiden</option>
+                                    <option>Naarden</option>
+                                    <option>Schagen</option>
+                                    <option>Velsen</option>
+                                    <option>Weesp</option>
+                                    <option>Zaanstad</option>
+                                    <option>Almelo</option>
+                                    <option>Blokzijl</option>
+                                    <option>Deventer</option>
+                                    <option>Enschede</option>
+                                    <option>Genemuiden</option>
+                                    <option>Hasselt</option>
+                                    <option>Hengelo</option>
+                                    <option>Kampen</option>
+                                    <option>Oldenzaal</option>
+                                    <option>Steenwijk</option>
+                                    <option>Vollenhove</option>
+                                    <option>Zwolle</option>
+                                    <option>Alphen aan den Rijn</option>
+                                    <option>Delft</option>
+                                    <option>Dordrecht</option>
+                                    <option>Gorinchem</option>
+                                    <option>Gouda</option>
+                                    <option>Leiden</option>
+                                    <option>Rotterdam</option>
+                                    <option>Spijkenisse</option>
+                                    <option>Zoetermeer</option>
+                                    <option>Amersfoort</option>
+                                    <option>Nieuwegein</option>
+                                    <option>Utrecht</option>
+                                    <option>Veenendaal</option>
+                                    <option>Arnemuiden</option>
+                                    <option>Goes</option>
+                                    <option>Hulst</option>
+                                    <option>Middelburg</option>
+                                    <option>Sluis</option>
+                                    <option>Terneuzen</option>
+                                    <option>Veere</option>
+                                    <option>Vlissingen </option>
+                                    <option>Zierikzee</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row">
+				<div class="col-md-4">
+					<h3>
+						Cabin
+					</h3><img class="bag" alt="small bag" src="images/baggage_cabin.jpg">
+					<div class='myQuantity'>
+					    <input type='button' value='-' class='qtyminus' field='quantitySmallBag' />
+					    <input type='text' name='quantitySmallBag' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantitySmallBag' />
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h3>
+						Medium
+					</h3><img class="bag" alt="medium bag" src="images/baggage_medium.jpg">
+					<div class='myQuantity'>
+					    <input type='button' value='-' class='qtyminus' field='quantityMediumBag' />
+					    <input type='text' name='quantityMediumBag' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantityMediumBag' />
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h3>
+						Large
+					</h3><img class="bag" alt="Large bag" src="images/baggage_large.jpg">
+					<div class='myQuantity'>
+					    <input type='button' value='-' class='qtyminus' field='quantityBigBag' />
+					    <input type='text' name='quantityBigBag' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantityBigBag' />
+					</div>
+				</div>
+			</div>
+
+
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<button href="confirm.html"  type="submit" class="btn btn-success" style="margin-top: 20px;">
+							&nbsp; &nbsp; Continue  &nbsp; &nbsp; &nbsp;
+						</button>
+					</div>
+				</div>
+			</form>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Luggage delivery
+					</h3>
+				</div>
+				<div class="panel-body">
+					<img src="images/airport.png" class="airport">
+					<h4>Amsterdam Schiphol Airport</h4>
+					Baggage depot between Departures hall 1 and hall 2 
+					  <!-- Trigger the modal with a button -->
+					  <a href="#" type="text" data-toggle="modal" data-target="#myModal">Click here for a map</a>
+
+					  <!-- Modal -->
+					  <div class="modal fade" id="myModal" role="dialog">
+					    <div class="modal-dialog">
+					    
+					      <!-- Modal content-->
+					      <div class="modal-content">
+					        <div class="modal-header">
+					          <button type="button" class="close" data-dismiss="modal">&times;</button>
+					          <h4 class="modal-title">Amsterdam Schiphol Airport</h4>
+					        </div>
+					        <div class="modal-body">
+					          <p>Baggage depot between Departures hall 1 and hall 2. </p>
+					          <img class="auto" src="images/schiphol_map.png">
+					        </div>
+					        <div class="modal-footer">
+					          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        </div>
+					      </div>
+					      
+					    </div>
+					  </div>
+				</div>
+			</div> 
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Pickup details
+					</h3>
+				</div>
+				<!-- Pickup Time -->
+				<div class="panel-body"> 
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+							<h1 class="display-1" style="font-size: 4em;">11:00</h1>
+							</div>
+							<div class="col-md-6">
+							<span class="text-muted">This is the earliest time that our drivers will pick up your luggage at your pickup address. Please make sure that your luggage has printed label.</span>
+
+							<!-- Trigger the modal with a video -->
+							 <a href="https://www.youtube.com/watch?v=gWCNmFwmhMk">Check video how to preparing your luggage for Travel. </a> 
+							<!-- Video / Generic Modal -->
+							<div class="modal fade" id="mediaModal" tabindex="-1" role="dialog" aria-hidden="true">
+								<div class="modal-dialog">
+								  <div class="modal-content"><h1>Preparing Your Luggage for Travel by SendMyBag  - Latest Version.</h1>
+								    <div class="modal-body">
+								      <!-- content dynamically inserted -->
+								    </div>
+								  </div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- <p class="text-left text-muted lead">
+				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+			</p> -->
+		</div>
+	</div>
+          <!-- test -->
+        </div>
+      </div>
+    </div>
+
+</div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>  
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.nl.js"></script>
+    <script type="text/javascript" src="js/jquery-queryParser.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Smart Luggage</title>
+
+    <link href="css/awesomplete.css" rel="stylesheet"> 
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom-carousel.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+    <header id="header" role="banner">
+        <div class="">
+            <div id="navbar" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li> -->
+                        <li><a href="#services">Track My Luggage</a></li>
+                        <li><a href="#portfolio">Airport Depot</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://www.scti.co.nz/media/2960/lost-luggage-airport.png">
+      <div class="container">
+        <div class="carousel-caption">
+            <p>Safe and secure to destination</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://previews.123rf.com/images/tvirbickis/tvirbickis1301/tvirbickis130100189/17403466-Woman-walking-quickly-pulling-green-and-black-luggage-in-busy-airport-Stock-Photo.jpg">
+      <div class="container">
+        <div class="carousel-caption">
+          <p>No more hassle in airport</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://previews.123rf.com/images/erierika/erierika1010/erierika101000031/8003294-Young-girl-sitting-on-luggage-and-waiting-for-train-in-the-station-Stock-Photo.jpg">
+      <div class="container">
+        <div class="carousel-caption">
+          <p>waiting for the train</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- search form  -->
+    <div class="container" id="searchForm">    
+        <div id="searchInbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Send your luggage</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">*required</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="landingForm" class="form-horizontal" role="form">     
+                            <div style="margin-bottom: 25px" class="input-group">
+
+                                
+                                <label class="group-addon">From</label>
+                                <span class="input-group-addon"></span>
+                                <input id="from_address" type="text" class="form-control awesomplete" name="from_address" value="" placeholder="&#xf015; City" list="nlSteden" />
+                                <datalist id="nlSteden">
+                                    <option>Assen</option>
+                                    <option>Coevorden</option>
+                                    <option>Emmen</option>
+                                    <option>Hoogeveen</option>
+                                    <option>Meppel</option>
+                                    <option>Almere</option>
+                                    <option>Lelystad</option>
+                                    <option>Emmeloord</option>
+                                    <option>Biddinghuizen</option>
+                                    <option>Bolsward</option>
+                                    <option>Dokkum</option>
+                                    <option>Drachten</option>
+                                    <option>Franeker</option>
+                                    <option>Harlingen</option>
+                                    <option>Heerenveen</option>
+                                    <option>Hindeloopen</option>
+                                    <option>IJlst</option>
+                                    <option>Leeuwarden</option>
+                                    <option>Sloten</option>
+                                    <option>Sneek</option>
+                                    <option>Stavoren</option>
+                                    <option>Workum</option>
+                                    <option>Apeldoorn</option>
+                                    <option>Arnhem</option>
+                                    <option>Bredevoort</option>
+                                    <option>Buren</option>
+                                    <option>Culemborg</option>
+                                    <option>Deil</option>
+                                    <option>Dieren</option>
+                                    <option>Doetinchem</option>
+                                    <option>Ede</option>
+                                    <option>Enspijk</option>
+                                    <option>Gendt</option>
+                                    <option>Groenlo</option>
+                                    <option>Harderwijk</option>
+                                    <option>Hattem</option>
+                                    <option>Heukelum</option>
+                                    <option>Huissen</option>
+                                    <option>Nijkerk</option>
+                                    <option>Nijmegen</option>
+                                    <option>Tiel</option>
+                                    <option>Wageningen</option>
+                                    <option>Wijchen</option>
+                                    <option>Winterswijk</option>
+                                    <option>Zaltbommel</option>
+                                    <option>Zevenaar</option>
+                                    <option>Zutphen</option>
+                                    <option>Appingedam</option>
+                                    <option>Delfzijl</option>
+                                    <option>Groningen</option>
+                                    <option>Hoogezand-Sappemeer</option>
+                                    <option>Stadskanaal</option>
+                                    <option>Winschoten</option>
+                                    <option>Veendam</option>
+                                    <option>Geleen</option>
+                                    <option>Gennep</option>
+                                    <option>Heerlen</option>
+                                    <option>Kerkrade</option>
+                                    <option>Kessel</option>
+                                    <option>Landgraaf</option>
+                                    <option>Maastricht</option>
+                                    <option>Montfort</option>
+                                    <option>Nieuwstadt</option>
+                                    <option>Roermond</option>
+                                    <option>Sittard</option>
+                                    <option>Schin op Geul</option>
+                                    <option>Stein</option>
+                                    <option>Thorn</option>
+                                    <option>Valkenburg</option>
+                                    <option>Venlo</option>
+                                    <option>Weert</option>
+                                    <option>Bergen op Zoom</option>
+                                    <option>Breda</option>
+                                    <option>'s-Hertogenbosch</option>
+                                    <option>Eindhoven</option>
+                                    <option>Geertruidenberg</option>
+                                    <option>Grave</option>
+                                    <option>Helmond</option>
+                                    <option>Heusden</option>
+                                    <option>Klundert</option>
+                                    <option>Oosterhout</option>
+                                    <option>Oss</option>
+                                    <option>Ravenstein</option>
+                                    <option>Roosendaal</option>
+                                    <option>Sint-Oedenrode</option>
+                                    <option>Tilburg</option>
+                                    <option>Valkenswaard</option>
+                                    <option>Veldhoven</option>
+                                    <option>Waalwijk</option>
+                                    <option>Willemstad</option>
+                                    <option>Woudrichem</option>
+                                    <option>Alkmaar</option>
+                                    <option>Amstelveen</option>
+                                    <option>Amsterdam</option>
+                                    <option>Den Helder</option>
+                                    <option>Edam, Volendam</option>
+                                    <option>Enkhuizen</option>
+                                    <option>Haarlem</option>
+                                    <option>Heerhugowaard</option>
+                                    <option>Hilversum</option>
+                                    <option>Hoofddorp</option>
+                                    <option>Hoorn</option>
+                                    <option>Laren</option>
+                                    <option>Purmerend</option>
+                                    <option>Medemblik</option>
+                                    <option>Monnickendam</option>
+                                    <option>Muiden</option>
+                                    <option>Naarden</option>
+                                    <option>Schagen</option>
+                                    <option>Velsen</option>
+                                    <option>Weesp</option>
+                                    <option>Zaanstad</option>
+                                    <option>Almelo</option>
+                                    <option>Blokzijl</option>
+                                    <option>Deventer</option>
+                                    <option>Enschede</option>
+                                    <option>Genemuiden</option>
+                                    <option>Hasselt</option>
+                                    <option>Hengelo</option>
+                                    <option>Kampen</option>
+                                    <option>Oldenzaal</option>
+                                    <option>Steenwijk</option>
+                                    <option>Vollenhove</option>
+                                    <option>Zwolle</option>
+                                    <option>Alphen aan den Rijn</option>
+                                    <option>Delft</option>
+                                    <option>Dordrecht</option>
+                                    <option>Gorinchem</option>
+                                    <option>Gouda</option>
+                                    <option>Leiden</option>
+                                    <option>Rotterdam</option>
+                                    <option>Spijkenisse</option>
+                                    <option>Zoetermeer</option>
+                                    <option>Amersfoort</option>
+                                    <option>Nieuwegein</option>
+                                    <option>Utrecht</option>
+                                    <option>Veenendaal</option>
+                                    <option>Arnemuiden</option>
+                                    <option>Goes</option>
+                                    <option>Hulst</option>
+                                    <option>Middelburg</option>
+                                    <option>Sluis</option>
+                                    <option>Terneuzen</option>
+                                    <option>Veere</option>
+                                    <option>Vlissingen </option>
+                                    <option>Zierikzee</option>
+                                </datalist>
+                            </div>
+                            
+
+                            <div style="margin-bottom: 25px" class="input-group">
+                                <label class="group-addon">To &nbsp; &nbsp; &nbsp;</label>
+                                
+                                <span class="input-group-addon"></span>
+                                <select id="to_address" name="to_address" class="form-control awesomplete">
+                                      <option value="schiphol">
+                                      &#xf072; Schiphol Airport</option>
+                                      <option value="address_destination">
+                                      &#xf236; Address destination</option>
+                                </select>
+                            </div>
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+                                      <a id="btn-login" href="schiphol.html" class="btn btn-success">Continue  </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            Don't have an account! 
+                                        <a href="#" onClick="$('#searchInbox').hide(); $('#signupbox').show()">
+                                            Sign Up Here
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </form>     
+
+
+
+                        </div>                     
+                    </div>  
+        </div>
+        <!-- SIGN IN  -->
+        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#searchInbox').show()">Sign In</a></div>
+                        </div>  
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form">
+                                
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+                                    
+                                
+                                  
+                                <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <!-- Button -->                                        
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                        <span style="margin-left:8px;">or</span>  
+                                    </div>
+                                </div>
+                                
+                                <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+                                    
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
+                                    </div>                            
+                                </div>
+                            </form>
+                         </div>
+                    </div>   
+         </div> 
+    </div> 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <i class="glyphicon glyphicon-chevron-right"></i>
+  </a>  
+</div>
+<!-- /.carousel -->
+
+<div class="container">
+    <!-- Carousel end -->
+
+<!-- TRACKING THE LUGGAGE -->
+    <section id="services">
+        <div class="container">
+            <div class="box">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="center">
+                            <i class="icon-apple icon-md icon-color1 glyphicon glyphicon-search"></i>
+                            <div><h4>LUGGAGE NUMBER*</h4></div>
+                            <div>
+                                <form class="form-horizontal">
+                                <fieldset>
+
+                                <!--For Text input-->
+                                <div class="form-group">
+                                  <label class="col-md-4 control-label" for="textinput"> </label>  
+                                  <div class="col-md-4">
+                                  <input id="textinput" name="textinput" type="number" placeholder="insert numbers" class="form-control input-md">
+                                  </div>
+                                </div>
+
+                                <!-- Button -->
+                                <div class="form-group">
+                                  <label class="col-md-4 control-label" for="searchLuggage"></label>
+                                  <div class="col-md-4">
+                                    <button href="#/" id="search" name="searchLuggage" class="btn btn-primary" onclick="prototypeSearch()">Search</button>
+                                  </div>
+                                </div>
+
+                                <div id="searchLuggageResult">
+                                     <script>
+                                        function prototypeSearch() {
+                                            document.getElementById("searchLuggageResult").innerHTML = "Your package now is in Schiphol Airport";
+                                           }
+                                        </script> 
+                                  </div>
+                                </fieldset>
+                                </form>
+
+                                <div id="searchLuggageResult">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-6-->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="center">
+                            <i class="icon-apple icon-md icon-color1 glyphicon glyphicon-search"></i>
+                            <h4 class="text-left">Track My Luggage</h4>
+                            <p class="text-left">We know how important your baggage is to you. Track your checked baggage with the Bag Tag Number that you received at the time of baggage check-in. Or, if your bags have been delayed, you can check their status using your File Reference Number, located on the Property Irregularity Report provided by our representative when you reported your delayed baggage.</p>
+                            <p>
+                            <h4 class="text-left">Luggage number location</h4>
+                            <p class="text-left">It's on your bag tag. You can check it at your email.</p>
+                            <img src="images/track_number.jpg">
+                            </p>
+                        </div>
+                    </div><!--/.col-md-6-->                   
+                </div><!--/.row-->
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="box">
+                <div class="center gap">
+                    <h2>Schiphol Airport Pickup Lugage</h2>
+                    <p class="lead">Luggage pick-up location at Schiphol. Located between terminal 2 and 3. Open at 0500 - 2200 everyday.</p>
+                </div>
+                <div class="center gap">
+                    <img src="images/luggage_pickup_schiphol.png">
+                </div>
+                <!--/.center-->
+                 
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
+
+    <section id="pricing">
+        <div class="container">
+            <div class="box">
+                <div class="center">
+                    <h2>See our Pricings</h2>
+                    <p class="lead">We will always give you the best price ever. <a href="#">Find out now</a> how much does it cost. For illustration this is the shipment price from your place in Amsterdam to Schiphol Airport.</p>
+                </div><!--/.center-->   
+                <div class="big-gap"></div>
+                <div id="pricing-table" class="row">
+                    <div class="col-sm-4">
+                        <ul class="plan">
+                            <li class="plan-name">Cabin</li>
+                            <li class="plan-price">€10</li>
+                            <li><strong>Less than 10 kilograms</strong></li>
+                            <li>maximum length of 56 cm</li>
+                            <li>width of 36 cm</li>
+                            <li>depth of 20 cm</li>
+                            <li><img src="images/baggage_cabin.jpg"></li>
+                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Send it now</a></li>
+                        </ul>
+                    </div><!--/.col-sm-4-->
+                    <div class="col-sm-4">
+                        <ul class="plan featured">
+                            <li class="plan-name">Medium</li>
+                            <li class="plan-price">€15</li>
+                            <li>Between 15 - 25 kilograms</li>
+                            <li>maximum length of 66 cm</li>
+                            <li>width of 43 cm</li>
+                            <li>depth of 26 cm</li>
+                            <li><img src="images/baggage_medium.jpg"></li>
+                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Send it now</a></li>
+                        </ul>
+                    </div><!--/.col-sm-4-->
+                    <div class="col-sm-4">
+                        <ul class="plan">
+                            <li class="plan-name">Large</li>
+                            <li class="plan-price">€20</li>
+                            <li>Between 25 - 100 kilograms</li>
+                            <li>maximum length of 77 cm</li>
+                            <li>width of 50 cm</li>
+                            <li>depth of 30 cm</li>
+                            <li><img src="images/baggage_large.jpg"></li>
+                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Send it now</a></li>
+                        </ul>
+                    </div><!--/.col-sm-4-->
+                </div> 
+            </div> 
+        </div>
+    </section><!--/#pricing-->
+
+    <section id="about-us">
+        <div class="container">
+            <div class="box">
+                <div class="center">
+                    <h2>Our Partners</h2>
+                    <p class="lead">Together with our valued partners, we deliver intelligent luggage solutions that optimize performance, drive efficiency, and reduce cost and complexity.</p>
+                </div>
+                <div class="center">
+                    <img class="logoPartners" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/FedEx_Express.svg/1200px-FedEx_Express.svg.png">
+                    <img class="logoPartners" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/KLM_logo.svg/1280px-KLM_logo.svg.png">
+                    <img class="logoPartners" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/United_Parcel_Service_logo_2014.svg/2000px-United_Parcel_Service_logo_2014.svg.png">
+                    <img class="logoPartners" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/DHL_Logo.svg/1280px-DHL_Logo.svg.png">
+                </div>
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#about-us-->
+
+    <section id="contact">
+        <div class="container">
+            <div class="box last">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Contact Us</h1>
+                        <img src="images/marieke.png" class="marieke"><p>Hi I am Marieke, your customer client service. My team and I are  ready to help you with any problems or questions that you may have. <br>
+                        For the best possible support, please be sure to use this chat form, which will automatically forward your question to the specialists who are the best able to answer your question. </p>
+
+
+                        <div class="status alert alert-success" style="display: none"></div>
+                        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="required" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="required" placeholder="Email address">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!--/.col-sm-6-->
+                    <div class="col-sm-6">
+                        <h1>Our Address</h1>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <address>
+                                    <i class="fa fa-phone"></i> 010 - 418 1000
+                                    <br>
+                                    <i class="fa fa-envelope"></i> help@parcelinternational.nl
+                                </address>
+                            </div>
+                            <div class="col-md-6">
+                                <address>
+                                    <strong></strong>
+                                </address>
+                            </div>
+                        </div>
+                        <h1>Connect with us</h1>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="social">
+                                    <li><a href="#"><i class="icon-facebook icon-social fa fa-facebook"></i>  Facebook</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="social">
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--/.col-sm-6-->
+                </div><!--/.row-->
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#contact-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; Smart Lugagge <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>   
+    <script type="text/javascript" src="js/awesomplete.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom-carousel.js"></script> 
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
