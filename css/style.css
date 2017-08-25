@@ -47,6 +47,21 @@
 	height: 100%;
 }
 
+.logoPartners {
+  width: auto;
+  height: 120px;
+  margin-right: 10px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.marieke {
+  width: 90px;
+  padding-right: 10px;
+  float: left;
+}
+
 /*button plus minus luggage*/
 .myQuantity {
     text-align: center;

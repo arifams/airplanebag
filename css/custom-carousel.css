@@ -28,7 +28,7 @@
 
 #searchForm {
 	position:absolute;
-  	top:25%;
+  	top:20%;
 }
 
 #flightInfo {
@@ -48,22 +48,7 @@ textarea, input, select {
 /*CUSTOM SEARCH LUGGAGE ON TRACKING*/
 
 
-/*CUSTOM LOGO PARTNER*/
-.logoPartners {
-  width: auto;
-  height: 90px;
-  margin-right: 10px;
-  margin-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
-/*CUSTOM IMAGE*/
-.marieke {
-  width: 90px;
-  padding-right: 10px;
-  float: left;
-}
 
 
 /* RESPONSIVE CSS

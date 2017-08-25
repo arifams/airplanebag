@@ -1,12 +1,6 @@
-// Empty JS for your own code to be here
+// Empty JS for own code to be here
 
-// check number on mobile phone
-function isNumberKey(evt){
-    var charCode = (evt.which) ? evt.which : event.keyCode
-    if (charCode > 31 && (charCode < 48 || charCode > 57))
-        return false;
-    return true;
-}
+
 
 // to check pickup date
 $(document).ready(function(){
@@ -90,5 +84,3 @@ jQuery(document).ready(function(){
         }
     });
 });
-
-    

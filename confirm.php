@@ -16,14 +16,13 @@
 
     <link href="css/main.css" rel="stylesheet">
 
-        <script type="text/javascript">
+    <script type="text/javascript">
 	var getQueryString = function ( field, url ) {
 	    var href = url ? url : window.location.href;
 	    var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
 	    var string = reg.exec(href);
 	    return string ? string[1] : null;
 	};
-
 
 	var username2 = getQueryString('username');
 	var destination = getQueryString('to_address');
@@ -47,6 +46,10 @@
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="0">
 
+<h1><script type="text/javascript">
+                        document.write(username2)
+                    </script></h1>
+
   <!-- header -->
   <header id="header" role="banner">
         <div class="">
@@ -68,6 +71,7 @@
         </div>
     </header>
 
+    <!-- form -->
     <div class="container">
 	  <div class="box">
         <div class="row">
@@ -99,49 +103,33 @@
 			<div class="clearfix"></div>
 		</div>
 		<div class="col-md-4 text-center">
-            <h3>
-            </h3>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        ③ Success
-                    </h3>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
+			<h3>
+			</h3>
+			<div class="clearfix"></div>
+		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-8">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Success
+						Confirmation Pickup
 					</h3>
 				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" role="form">
 
-
-<!-- BEGIN FORM -->
-<form action="success.html" class="form-horizontal" role="form">
-
-
 			<div class="form-group">
                 <label for="pickupDate" class="col-md-2 control-label">Pickup date</label>
                 <div class=" col-sm-10">
-	                <h4><script type="text/javascript">
-					document.write(pickupDate);
-					</script></h4>
+	                <h4>07 September 2017</h4>
                 </div>
             </div>
 
 			<div class="form-group">
                 <label for="pickupTime" class="col-md-2 control-label">Pickup time</label>
                 <div class=" col-sm-10">
-	                <h4><script type="text/javascript">
-					document.write(pickupTime)
-					</script></h4>
+	                <h4>11:30</h4>
                 </div>
             </div>
 
@@ -151,9 +139,7 @@
 						Mobile Number
 					</label>
 					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-						document.write(mobile)
-						</script></h4>
+						<h4>+31612345678</h4>
 					</div>
 				</div>
 
@@ -162,9 +148,7 @@
 						Email
 					</label>
 					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(email)
-</script></h4>
+						<h4>info@parcelinternational.com</h4>
 					</div>
 				</div>
 
@@ -173,9 +157,7 @@ document.write(email)
 						Adress
 					</label>
 					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(inputAddress)
-</script></h4>
+						<h4>Straatweg 199</h4>
 					</div>
 				</div>
 
@@ -184,9 +166,7 @@ document.write(inputAddress)
 						Additional address information
 					</label>
 					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(additionalAddress)
-</script></h4>
+						<h4>Parcel International</h4>
 					</div>
 				</div>
 
@@ -195,9 +175,7 @@ document.write(additionalAddress)
 						Postal / Zip code
 					</label>
 					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(postcode)
-</script></h4>
+						<h4>3054AE</h4>
 					</div>
 				</div>
 
@@ -206,9 +184,7 @@ document.write(postcode)
 						City
 					</label>
 					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(city)
-</script></h4>
+						<h4>Rotterdam</h4>
 					</div>
 				</div>
 
@@ -217,9 +193,7 @@ document.write(city)
 						Cabin Luggage
 					</label>
 					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(quantitySmallBag)
-</script></h4>
+						<h4>3</h4>
 					</div>
 				</div>
 
@@ -228,9 +202,7 @@ document.write(quantitySmallBag)
 						Medium Luggage
 					</label>
 					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(quantityMediumBag)
-</script></h4>
+						<h4>5</h4>
 					</div>
 				</div>
 
@@ -239,27 +211,18 @@ document.write(quantityMediumBag)
 						Large Luggage
 					</label>
 					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(quantityBigBag)
-</script></h4>
+						<h4>1</h4>
 					</div>
 				</div>
+
 
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<a href="success.html" type="submit" class="btn btn-success">Confirm</a>
-					</div>
-				</div>
-
-				<!-- Quick and dirty code above, to go to confirm.html
-				because button supposed to be this one -->
-				<!-- <div class="row">
-					<div class="col-md-12 text-center">
-						<button id="myButton" type="submit" class="btn btn-success" style="margin-top: 20px;">
-							&nbsp; &nbsp; Confirm  &nbsp; &nbsp; &nbsp;
+						<button type="submit" class="btn btn-success" style="margin-top: 20px;">
+							&nbsp; &nbsp; Continue  &nbsp; &nbsp; &nbsp;
 						</button>
 					</div>
-				</div> -->
+				</div>
 			</form>
 				</div>
 			</div>
@@ -291,7 +254,7 @@ document.write(quantityBigBag)
 					        </div>
 					        <div class="modal-body">
 					          <p>Baggage depot between Departures hall 1 and hall 2. </p>
-					          <img class="auto" src="images/luggage_pickup_schiphol2.png">
+					          <img class="auto" src="images/schiphol_map.png">
 					        </div>
 					        <div class="modal-footer">
 					          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -355,7 +318,7 @@ document.write(quantityBigBag)
     <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="js/moment.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>  
-    <!-- <script type="text/javascript" src="js/bootstrap-datetimepicker.nl.js"></script> -->
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.nl.js"></script>
     <script type="text/javascript" src="js/jquery-queryParser.min.js" ></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 

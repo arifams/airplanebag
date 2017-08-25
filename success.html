@@ -24,7 +24,6 @@
 	    return string ? string[1] : null;
 	};
 
-
 	var username2 = getQueryString('username');
 	var destination = getQueryString('to_address');
 	var pickupDate = getQueryString('pickupDate');
@@ -68,6 +67,7 @@
         </div>
     </header>
 
+    <!-- form -->
     <div class="container">
 	  <div class="box">
         <div class="row">
@@ -89,7 +89,7 @@
 		<div class="col-md-4 text-center">
 			<h3>
 			</h3>
-			<div class="panel panel-primary">
+			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
 						② Payment and confirmation
@@ -101,7 +101,7 @@
 		<div class="col-md-4 text-center">
             <h3>
             </h3>
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">
                         ③ Success
@@ -119,148 +119,53 @@
 						Success
 					</h3>
 				</div>
-				<div class="panel-body">
-					<form class="form-horizontal" role="form">
+				<div>
+					<div class="col-md-12">
+						<div class="jumbotron">
+							<h2>
+								Hello, userName!
+							</h2>
+							<div class="panel panel-default">
+      <div class="panel-body">
+        <center>
+        <img src="https://cdn4.iconfinder.com/data/icons/social-communication/142/open_mail_letter-512.png" style="width:30px; height: 30px;">
+          <p class="desc">Thank you for using Smart Luggage !<br>We've sent a confirmation link on your email.<br>Please visit your inbox for your luggage tag. <img style="width: 40px; height: 40px" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-icons-business/080840-glossy-black-icon-business-mailbox.png">.</p>
+        
 
+        <!-- Trigger the modal with a button -->
+					  <a href="#" type="text" data-toggle="modal" data-target="#tagModal" class="btn btn-primary btn-large">Click here to print your bag tag</a>
 
-<!-- BEGIN FORM -->
-<form action="success.html" class="form-horizontal" role="form">
-
-
-			<div class="form-group">
-                <label for="pickupDate" class="col-md-2 control-label">Pickup date</label>
-                <div class=" col-sm-10">
-	                <h4><script type="text/javascript">
-					document.write(pickupDate);
-					</script></h4>
-                </div>
-            </div>
-
-			<div class="form-group">
-                <label for="pickupTime" class="col-md-2 control-label">Pickup time</label>
-                <div class=" col-sm-10">
-	                <h4><script type="text/javascript">
-					document.write(pickupTime)
-					</script></h4>
-                </div>
-            </div>
-
-
-				<div class="form-group">		 
-					<label for="inputMobile" class="col-sm-2 control-label">
-						Mobile Number
-					</label>
-					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-						document.write(mobile)
-						</script></h4>
+					  <!-- Modal -->
+					  <div class="modal fade" id="tagModal" role="dialog">
+					    <div class="modal-dialog">
+					    
+					      <!-- Modal content-->
+					      <div class="modal-content">
+					        <div class="modal-header">
+					          <button type="button" class="close" data-dismiss="modal">&times;</button>
+					          <h4 class="modal-title">Passanger 'userName'</h4>
+					        </div>
+					        <div class="modal-body">
+					        <button onclick="printFunction()">Print this tag ID</button>
+								<script>
+								function printFunction() {
+								    window.print();
+								}
+								</script>
+					          <img class="auto" src="images/bag_tag.jpg">
+					        </div>
+					        <div class="modal-footer">
+					          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        </div>
+					      </div>
+					      
+					    </div>
+					  </div>
+		</center>
+      </div>
+	</div>
+						</div>
 					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="inputEmail" class="col-sm-2 control-label">
-						Email
-					</label>
-					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(email)
-</script></h4>
-					</div>
-				</div>
-
-				<div class="form-group">	 
-					<label for="inputAddress" class="col-sm-2 control-label">
-						Adress
-					</label>
-					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(inputAddress)
-</script></h4>
-					</div>
-				</div>
-
-				<div class="form-group">	 
-					<label for="inputAdditionalAddress" class="col-sm-2 control-label">
-						Additional address information
-					</label>
-					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(additionalAddress)
-</script></h4>
-					</div>
-				</div>
-
-				<div class="form-group">	 
-					<label for="inputZipcode" class="col-sm-2 control-label">
-						Postal / Zip code
-					</label>
-					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(postcode)
-</script></h4>
-					</div>
-				</div>
-
-				<div class="form-group">	 
-					<label for="selectCity" class="col-sm-2 control-label">
-						City
-					</label>
-					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(city)
-</script></h4>
-					</div>
-				</div>
-
-				<div class="form-group">	 
-					<label for="selectCity" class="col-sm-2 control-label">
-						Cabin Luggage
-					</label>
-					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(quantitySmallBag)
-</script></h4>
-					</div>
-				</div>
-
-				<div class="form-group">	 
-					<label for="selectCity" class="col-sm-2 control-label">
-						Medium Luggage
-					</label>
-					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(quantityMediumBag)
-</script></h4>
-					</div>
-				</div>
-
-				<div class="form-group">	 
-					<label for="selectCity" class="col-sm-2 control-label">
-						Large Luggage
-					</label>
-					<div class="col-sm-10">
-						<h4><script type="text/javascript">
-document.write(quantityBigBag)
-</script></h4>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<a href="success.html" type="submit" class="btn btn-success">Confirm</a>
-					</div>
-				</div>
-
-				<!-- Quick and dirty code above, to go to confirm.html
-				because button supposed to be this one -->
-				<!-- <div class="row">
-					<div class="col-md-12 text-center">
-						<button id="myButton" type="submit" class="btn btn-success" style="margin-top: 20px;">
-							&nbsp; &nbsp; Confirm  &nbsp; &nbsp; &nbsp;
-						</button>
-					</div>
-				</div> -->
-			</form>
 				</div>
 			</div>
 			

@@ -14,6 +14,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -90,7 +91,6 @@
     </div>
   </div>
 
-  <!-- test -->
   <div class="container" id="flightInfo">    
         <div style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
          <div class="panel panel-info" >    
@@ -146,15 +146,16 @@ London City · Wed, 23 August
                 </div>
             </div>
 
-            </div> <!-- end panelbody -->
+            </div> <!-- end panelbody flight -->
 
           </div>   
         </div> 
     </div> 
-  <!-- test -->
 
 
 
+<!-- start form -->
+<form id="landingForm" action="schiphol.html" class="form-horizontal" role="form">
     <!-- SEARCH FORM  -->
     <div class="container" id="searchForm">    
         <div id="searchInbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
@@ -165,14 +166,6 @@ London City · Wed, 23 August
                 </div>     
 
                 <div class="panel-body" >
-                    
-
-                <!-- <div>
-                    <img class="img-responsive flightInfo" src="images/flightInfo2.jpg">test
-                </div> -->
-
-
-
                     <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
                         <div class="form-group">
                             <label for="from" class="col-md-3 control-label">From</label>
@@ -181,8 +174,8 @@ London City · Wed, 23 August
                                     <span class="input-group-addon">
                                         <i class="glyphicon glyphicon-home"></i>
                                     </span>
-                                    <select name="selectCity" required>
-                                    <option>'s-Hertogenbosch</option>
+                                    <select name="selectCity" id="selectCity" required>
+                                    <option>s-Hertogenbosch</option>
                                     <option>Alkmaar</option>
                                     <option>Almelo</option>
                                     <option>Almere</option>
@@ -341,25 +334,29 @@ London City · Wed, 23 August
                                         <i class="glyphicon  glyphicon-map-marker"></i>
                                     </span>
                                     <select id="to_address" name="to_address" class="form-control">
-                                      <option value="schiphol">
+                                      <option value="Schiphol Airport">
                                       &#xf072; Schiphol Airport</option>
-                                      <option value="address_destination">
+                                      <option value="Address Destination">
                                       &#xf236; Address destination</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Selected option for city and address -->
+                          <script type="text/javascript">
+                          $("#selectCity #to_address  option:selected").html();
+                          </script>
 
-                    <form id="landingForm" class="form-horizontal" role="form">     
 
                             <div style="margin-top:10px" class="form-group">
                                 <!-- Button -->
 
                                 <div class="col-sm-12 controls">
-                                  <a id="btn-login" type="submit" href="schiphol.html" class="btn btn-success">Continue  </a>
+                                  <input id="btn-login" type="submit"  class="btn btn-success">
                                 </div>
                             </div>
+</form>
 
                             <div class="form-group">
                                 <div class="col-md-12 control">
@@ -576,7 +573,7 @@ London City · Wed, 23 August
                     <p class="lead">Luggage pick-up location at Schiphol. Located between terminal 2 and 3. Open at 0500 - 2200 everyday.</p>
                 </div>
                 <div class="center gap">
-                    <img class="img-responsive" alt="luggage pickup location amsterdam schiphol" src="images/luggage_pickup_schiphol.png">
+                    <img class="img-responsive" alt="luggage pickup location amsterdam schiphol" src="images/luggage_pickup_schiphol2.png">
                 </div>
                 <!--/.center-->
                  
@@ -742,6 +739,9 @@ London City · Wed, 23 August
     <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
     <script type="text/javascript" src="js/main.js"></script>
+
+
+
 
 </body>
 </html>
