@@ -28,32 +28,60 @@
 </head><!--/head-->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
-    <header id="header" role="banner">
-        <div class="">
-            <div id="navbar" class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"></a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li> -->
-                        <li><a href="#services">Track My Luggage</a></li>
-                        <li><a href="#portfolio">Airport Depot</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#about-us">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--/#header-->
+<!--  header navbar -->
+<header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_menu" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_sso" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="glyphicon glyphicon-log-in"></i>
+            </button>
+            <a class="img-responsive" href="#"><img class="logo" src="images/logo2.png"></a>
+          </div>
+          <!-- navbar login -->
+          <div id="navbar_sso" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right rightMargin">
+              <li><a href="#"><i class="fa fa-facebook-official topMargin"></i></a></li>
+              <li class="topMargin2"><a href="#">Sign in</a></li>
+              <li class="topMargin2"><a href="#">Sign up</a></li>
+              <li class="dropdown topMargin2">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">German</a></li>
+                    <li><a href="#">Netherlands</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+          <!-- navbar border -->
+          <div>
+              <hr class="hrLine">
+          </div>
+          <!-- navbar menu -->
+          <div id="navbar_menu" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav leftMargin">
+              <li><a href="#">Home</a></li>
+              <li><a href="#services">Track My Luggage</a></li>
+              <li><a href="#airport_depot">Airport Depot</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+</header>
+<!-- test navbar -->
+
+
+    
 
     <!-- Carousel
 ================================================== -->
@@ -175,7 +203,6 @@ London City · Wed, 23 August
                                         <i class="glyphicon glyphicon-home"></i>
                                     </span>
                                     <select name="selectCity" id="selectCity" required>
-                                    <option>s-Hertogenbosch</option>
                                     <option>Alkmaar</option>
                                     <option>Almelo</option>
                                     <option>Almere</option>
@@ -344,9 +371,16 @@ London City · Wed, 23 August
                         </div>
 
                         <!-- Selected option for city and address -->
-                          <script type="text/javascript">
-                          $("#selectCity #to_address  option:selected").html();
-                          </script>
+                        <!--    
+                        // $("#selectCity #to_address  option:selected").html(); 
+                        // Due to jquery odd behaviour recognizing $
+                        // I change to script below
+                        // to avoid error in chrome -->
+                        <script type="text/javascript">
+                          (function($){
+                                ("#selectCity #to_address  option:selected").html();
+                            });
+                        </script>
 
 
                             <div style="margin-top:10px" class="form-group">
@@ -565,7 +599,7 @@ London City · Wed, 23 August
         </div><!--/.container-->
     </section><!--/#services-->
 
-    <section id="portfolio">
+    <section id="airport_depot">
         <div class="container">
             <div class="box">
                 <div class="center gap">
@@ -731,15 +765,18 @@ London City · Wed, 23 August
             </div>
         </div>
     </footer><!--/#footer-->
-
-    <script type="text/javascript" src="js/jquery.js"></script>   
+    <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>  
     <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/custom-carousel.js"></script> 
     <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+    <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>  
     <script type="text/javascript" src="js/main.js"></script>
-
+    <script type="text/javascript" src="js/scripts.js"></script>
 
 
 

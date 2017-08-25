@@ -1,4 +1,33 @@
 /*My style*/
+
+/*navbar style*/
+/*NAV BORDER*/ 
+.logo {
+  width: 80%;
+  height: auto;
+  padding-left: 105px;
+  padding-top: 5px;
+  margin-bottom: -25px;
+}
+.rightMargin {
+    margin-right: 55px;
+}
+.topMargin {
+  margin-top: 10px;
+}
+.topMargin2 {
+  margin-top: 15px;
+}
+.leftMargin {
+  padding-left: 65px;
+}
+.hrLine {
+  margin-left: 105px;
+  margin-right: 65px;
+  margin-bottom: 0px;
+}
+
+
 .numberCircle {
 	padding-top: 10px;
 	font-size: 3em;
@@ -10,7 +39,6 @@
  	color: grey;
  }
 
- /*BACKGROUND COLOR*/
  .bg-white {
  	background-color: white;
  }
