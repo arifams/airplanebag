@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+    var getQueryString = function ( field, url ) {
+        var href = url ? url : window.location.href;
+        var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+        var string = reg.exec(href);
+        return string ? string[1] : null;
+    };
+
+    var city = getQueryString('selectCity'); 
+    // var destination = getQueryString('to_address');
+
+
+	function what()
+	{
+	    var destination = getQueryString('to_address');
+	    document.getElementById('yourElementWithId').innerHTML = to_address; 
+	}
+	what();
+	
+	</script>
+</head>
+<body>
+	<h1><div id="yourElementWithId"></div></h1> 
+</body>
+</html>

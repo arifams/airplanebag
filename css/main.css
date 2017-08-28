@@ -478,14 +478,15 @@ a:focus {
 }
 */
 .navbar-default .navbar-nav  {
+  display: inline-block;
 }
 .navbar-default .navbar-nav > li {
   padding-left: 25px;
 }
 .navbar-default .navbar-nav > li > a {
   padding: 15px 0 15px 0; 
-  font-size: 14px;
-  line-height: 4px;
+  font-size: 13px;
+  line-height: 14px;
   color: 9437a5;
 }
 .navbar-default .navbar-nav > li > a > i {

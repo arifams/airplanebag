@@ -1,7 +1,6 @@
 /*My style*/
 
 /*navbar style*/
-/*NAV BORDER*/ 
 .logo {
   width: 80%;
   height: auto;
@@ -15,8 +14,9 @@
 .topMargin {
   margin-top: 10px;
 }
-.topMargin2 {
+#navbar_sso {
   margin-top: 15px;
+  margin-bottom: -15px;
 }
 .leftMargin {
   padding-left: 65px;
@@ -25,6 +25,11 @@
   margin-left: 105px;
   margin-right: 65px;
   margin-bottom: 0px;
+}
+
+/*FLIGHT INFO*/
+#flightInfo {
+  padding-top: 0px;
 }
 
 

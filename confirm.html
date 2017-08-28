@@ -131,7 +131,9 @@
                 <label for="pickupDate" class="col-md-2 control-label">Pickup date</label>
                 <div class=" col-sm-10">
 	                <h4><script type="text/javascript">
-					document.write(pickupDate);
+					// var pickupDate = getQueryString('pickupDate');
+	                var pickupDate2 = pickupDate.replace(/\+/g, " ");
+	                document.write(pickupDate2);
 					</script></h4>
                 </div>
             </div>
@@ -140,7 +142,9 @@
                 <label for="pickupTime" class="col-md-2 control-label">Pickup time</label>
                 <div class=" col-sm-10">
 	                <h4><script type="text/javascript">
-					document.write(pickupTime)
+					// document.write(pickupTime)
+					var pickupTime2 = pickupTime.replace(/\%3A/g, ":");
+	                document.write(pickupTime2);
 					</script></h4>
                 </div>
             </div>
@@ -163,18 +167,36 @@
 					</label>
 					<div class="col-sm-10">
 						<h4><script type="text/javascript">
-document.write(email)
-</script></h4>
+						// document.write(email)
+						var email2 = email.replace(/\%40/g, "@");
+	                	document.write(email2);
+						</script></h4>
 					</div>
 				</div>
 
 				<div class="form-group">	 
-					<label for="inputAddress" class="col-sm-2 control-label">
+					<label for="address" class="col-sm-2 control-label">
 						Adress
 					</label>
 					<div class="col-sm-10">
 						<h4><script type="text/javascript">
-document.write(inputAddress)
+// document.write(address)
+var address2 = address.replace(/\+/g, " ")
+	.replace(/\%27/g, "'")
+	.replace(/\%2C/g,",")
+	.replace(/\%C3%A4/g, "ä")
+	.replace(/\%C3%84/g, "Ä")
+	.replace(/\%C3%AF/g,"ï")
+	.replace(/\%C3%8F/g,"Ï")
+	.replace(/\%C3%BC/g,"ü")
+	.replace(/\%C3%9C/g,"Ü")
+	.replace(/\%C3%AB/g,"ë")
+	.replace(/\%C3%8B/g,"Ë")
+	.replace(/\%C3%B6/g,"ö")
+	.replace(/\%C3%96/g,"Ö")
+	.replace(/\%C3%BF/g, "ÿ")
+	.replace(/\%C5%B8/g, "Ÿ");
+document.write(address2);
 </script></h4>
 					</div>
 				</div>
@@ -185,7 +207,23 @@ document.write(inputAddress)
 					</label>
 					<div class="col-sm-10">
 						<h4><script type="text/javascript">
-document.write(additionalAddress)
+// document.write(additionalAddress)
+var additionalAddress2 = additionalAddress.replace(/\+/g, " ")
+	.replace(/\%27/g, "'")
+	.replace(/\%2C/g,",")
+	.replace(/\%C3%A4/g, "ä")
+	.replace(/\%C3%84/g, "Ä")
+	.replace(/\%C3%AF/g,"ï")
+	.replace(/\%C3%8F/g,"Ï")
+	.replace(/\%C3%BC/g,"ü")
+	.replace(/\%C3%9C/g,"Ü")
+	.replace(/\%C3%AB/g,"ë")
+	.replace(/\%C3%8B/g,"Ë")
+	.replace(/\%C3%B6/g,"ö")
+	.replace(/\%C3%96/g,"Ö")
+	.replace(/\%C3%BF/g, "ÿ")
+	.replace(/\%C5%B8/g, "Ÿ");
+document.write(additionalAddress2);
 </script></h4>
 					</div>
 				</div>
